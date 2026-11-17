@@ -21,6 +21,11 @@
       "name": "oo-design",
       "source": "./plugins/oo-design",
       "description": "Object-oriented design and general coding: coding principles, SOLID, code review checklist."
+    },
+    {
+      "name": "git-workflow",
+      "source": "./plugins/git-workflow",
+      "description": "Git commits: Conventional Commits messages, signed off by the current user, checked by a hook."
     }
   ]
 }

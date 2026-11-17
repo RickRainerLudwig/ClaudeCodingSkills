@@ -45,6 +45,18 @@ only the plugins a project needs.
 - Mutable fields are private; non-private fields are final/readonly/const and reference immutable objects only
 - The SOLID principles, applied to reduce the cost of change, not as an end in themselves
 
+### `git-workflow` – Git commits
+
+| Skill | Use |
+|---|---|
+| `commit-messages` | Creating commits and writing or reviewing commit messages |
+
+- Every commit message starts with a type prefix as defined by [Conventional Commits](https://www.conventionalcommits.org),
+  e.g. `feat:`, `fix:`, `docs:`, `test:` or `chore:`
+- Every commit is signed off by the current git user (`git commit -s`)
+- A hook checks each commit Claude creates and asks Claude to amend it if it breaks these rules. The hook needs
+  `bash` and `git`, which Claude Code on Windows provides through Git for Windows.
+
 ## Installation
 
 Add the marketplace and install the plugins you need in Claude Code:
@@ -54,6 +66,7 @@ Add the marketplace and install the plugins you need in Claude Code:
 /plugin install english-docs@claude-coding-skills
 /plugin install ddd@claude-coding-skills
 /plugin install oo-design@claude-coding-skills
+/plugin install git-workflow@claude-coding-skills
 ```
 
 To get updates later, run `/plugin marketplace update claude-coding-skills`.
@@ -90,6 +103,7 @@ reads. The skills then provide the details.
 plugins/<plugin>/
 ├── .claude-plugin/plugin.json           name, description and version of the plugin
 ├── skills/<skill>/SKILL.md              one folder per skill
+├── hooks/                               optional hooks that run on tool calls
 └── evals/<case>/                        test cases for the plugin
     ├── prompt.md
     └── graders/*.md

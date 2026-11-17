@@ -1,0 +1,26 @@
+{
+  "name": "claude-coding-skills",
+  "owner": {
+    "name": "Rick-Rainer Ludwig"
+  },
+  "metadata": {
+    "description": "Collection of Claude Code skills for development."
+  },
+  "plugins": [
+    {
+      "name": "english-docs",
+      "source": "./plugins/english-docs",
+      "description": "Writing and proofreading technical documentation in English."
+    },
+    {
+      "name": "ddd",
+      "source": "./plugins/ddd",
+      "description": "Domain-Driven Design: strategic and tactical design, and reviews of existing code."
+    },
+    {
+      "name": "oo-design",
+      "source": "./plugins/oo-design",
+      "description": "Object-oriented design and general coding: coding principles, SOLID, design patterns, refactoring, code review."
+    }
+  ]
+}

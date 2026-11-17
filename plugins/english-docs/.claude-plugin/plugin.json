@@ -1,0 +1,9 @@
+{
+  "name": "english-docs",
+  "description": "Writing and proofreading technical documentation in English.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rick-Rainer Ludwig"
+  },
+  "license": "Apache-2.0"
+}

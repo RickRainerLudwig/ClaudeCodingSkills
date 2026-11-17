@@ -1,0 +1,9 @@
+{
+  "name": "oo-design",
+  "description": "Object-oriented design and general coding: coding principles, SOLID, design patterns, refactoring, code review.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rick-Rainer Ludwig"
+  },
+  "license": "Apache-2.0"
+}

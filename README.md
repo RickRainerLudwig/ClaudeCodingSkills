@@ -38,3 +38,15 @@ load a plugin directly: `claude --plugin-dir plugins/ddd`. After changes, run
 `/plugin marketplace update claude-coding-skills` and update the plugin.
 
 Validate the manifests with `claude plugin validate .` (marketplace) or `claude plugin validate plugins/<plugin>`.
+
+## Evals
+
+Each plugin has eval cases in `plugins/<plugin>/evals/<case>/` (`prompt.md` and LLM graders in `graders/*.md`).
+They run every case with and without the plugin and report the difference:
+
+```
+cd plugins/<plugin>
+claude plugin eval . --runs 1 --no-publish
+```
+
+Results go to `evals/results/` (not committed).

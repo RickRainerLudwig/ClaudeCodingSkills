@@ -1,9 +1,9 @@
 ---
-name: code-review
-description: Review source code changes or existing code for correctness, readability, maintainability, tests and security. Use when asked to review a diff, a pull request, a file or a module, or to check code before it is committed.
+name: review-checklist
+description: Review source code with a fixed checklist - correctness, security, tests, design principles and readability - and report findings ranked as blocker, major or minor, each with location, failure scenario and fix. Use when asked to review a diff, a pull request, a file or a module, or to check code before it is committed.
 ---
 
-# Code Review
+# Review Checklist
 
 ## Procedure
 
@@ -19,7 +19,7 @@ description: Review source code changes or existing code for correctness, readab
 1. **Correctness:** logic errors, edge cases (empty, null, boundaries, overflow), error handling, concurrency,
    resource handling.
 2. **Security:** input validation, injection, secrets in code, authorization checks.
-3. **Tests:** are the changed behaviours tested, including edge and error cases? Do the tests check behaviour rather
+3. **Tests:** are the changed behaviors tested, including edge and error cases? Do the tests check behavior rather
    than implementation details?
 4. **Design and maintainability:** the principles of the `coding-principles` skill (Single Level of
    Abstraction, Single Responsibility, Don't Repeat Yourself, Keep It Simple, You Aren't Gonna Need It, ...),
@@ -29,7 +29,7 @@ description: Review source code changes or existing code for correctness, readab
 ## Severity
 
 - **Blocker:** wrong results, data loss, security problem, crash.
-- **Major:** likely bug in edge cases, missing tests for changed behaviour, design that makes the next change hard.
+- **Major:** likely bug in edge cases, missing tests for changed behavior, design that makes the next change hard.
 - **Minor:** readability, naming, small simplifications.
 
 Style questions that a formatter or linter covers are not review findings.

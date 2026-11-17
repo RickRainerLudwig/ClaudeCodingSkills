@@ -4,7 +4,7 @@ Skills for [Claude Code](https://claude.com/claude-code) that make Claude write 
 want it: clean, immutable where possible, designed with Domain-Driven Design (DDD), and documented in plain English.
 
 The repository is a Claude Code **plugin marketplace** named `claude-coding-skills`. Each plugin covers one topic and
-contains several skills. A skill is a set of instructions that Claude loads when a task matches it. You install
+contains one or more skills. A skill is a set of instructions that Claude loads when a task matches it. You install
 only the plugins a project needs.
 
 ## Plugins
@@ -38,7 +38,7 @@ only the plugins a project needs.
 |---|---|
 | `coding-principles` | Writing, changing and refactoring code |
 | `solid` | Designing classes and interfaces, assessing a design |
-| `code-review` | Reviewing a change, a file or a module |
+| `review-checklist` | Reviewing a change, a file or a module with a fixed checklist and severity ranking |
 
 - Single Level of Abstraction (SLA), Single Responsibility Principle (SRP), Don't Repeat Yourself (DRY), Keep It
   Simple (KISS), You Aren't Gonna Need It (YAGNI) and more

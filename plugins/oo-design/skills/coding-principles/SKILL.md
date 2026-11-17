@@ -59,7 +59,7 @@ principles conflict, choose the variant that is easier to understand and to chan
 - Names reveal the intention; the name of a function says what it achieves, not how.
 - Functions are short and do one thing; few parameters (more than three is a hint to introduce a parameter object).
 - No magic numbers or strings: use named constants.
-- Comments explain intention, not what the code does (see `english-docs:technical-writing`).
+- Comments explain intention, not what the code does.
 
 ## Boy scout rule
 

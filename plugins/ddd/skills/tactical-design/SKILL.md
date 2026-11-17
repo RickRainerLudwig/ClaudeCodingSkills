@@ -1,6 +1,6 @@
 ---
 name: tactical-design
-description: Design or implement the domain model of a bounded context with Domain-Driven Design building blocks - aggregates, entities, value objects, domain events, repositories, domain services, factories and modules. Use when modelling a domain, deciding between entity and value object, drawing aggregate boundaries, or implementing such classes.
+description: Design or implement the domain model of a bounded context with Domain-Driven Design building blocks - aggregates, entities, value objects, domain events, repositories, domain services, factories and modules. Use when modeling a domain, deciding between entity and value object, drawing aggregate boundaries, or implementing such classes.
 ---
 
 # DDD Tactical Design
@@ -51,6 +51,9 @@ All model classes - value objects, entities and aggregates - are implemented imm
 - The domain operation checks the invariants before it creates the new instance, so every instance is valid.
 - The repository stores the new instance as the new state of the aggregate. Concurrent changes of the same aggregate
   are detected with a version number (optimistic locking).
+- Two instances with the same identity are equal, even if their states differ: `order.equals(order.place(now))` is
+  `true`. This is intended, because both are states of the same entity. To tell two states apart, compare the
+  version number or the attributes, and do not keep different states of one entity in the same set or cache.
 
 This reconciles Evans' changing entity with immutability: the lifecycle of an entity is a sequence of immutable
 states that share one identity. Immutable model objects are thread-safe and can be shared, cached and passed between

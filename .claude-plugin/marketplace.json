@@ -15,12 +15,12 @@
     {
       "name": "ddd",
       "source": "./plugins/ddd",
-      "description": "Domain-Driven Design: strategic and tactical design, and reviews of existing code."
+      "description": "Domain-Driven Design: tactical design of the domain model with aggregates, entities and value objects."
     },
     {
       "name": "oo-design",
       "source": "./plugins/oo-design",
-      "description": "Object-oriented design and general coding: coding principles, SOLID, design patterns, refactoring, code review."
+      "description": "Object-oriented design and general coding: coding principles, SOLID, code review checklist."
     }
   ]
 }

@@ -13,7 +13,7 @@ concrete change it makes easier; otherwise keep the simpler design.
 - **Single Responsibility (SRP):** a class has one reason to change, i.e. it serves one actor or concern.
   Symptoms of a violation: the class name contains "And" or "Manager", unrelated methods, changes for different
   reasons touch the same class.
-- **Open/Closed (OCP):** extend behaviour by adding code, not by changing existing code. Symptoms: growing
+- **Open/Closed (OCP):** extend behavior by adding code, not by changing existing code. Symptoms: growing
   `switch`/`if` chains over types. Remedy: polymorphism or strategies, but only for variation that actually occurs.
 - **Liskov Substitution (LSP):** a subtype is usable wherever its base type is expected, without surprises.
   Symptoms: overrides that throw "not supported", strengthened preconditions, `instanceof` checks by callers.

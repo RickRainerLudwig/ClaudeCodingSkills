@@ -1,7 +1,7 @@
 {
   "name": "ddd",
-  "description": "Domain-Driven Design: strategic and tactical design, and reviews of existing code.",
-  "version": "0.1.0",
+  "description": "Domain-Driven Design: tactical design of the domain model with aggregates, entities and value objects.",
+  "version": "0.1.2",
   "author": {
     "name": "Rick-Rainer Ludwig"
   },
